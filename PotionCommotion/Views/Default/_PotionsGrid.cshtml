@@ -1,0 +1,9 @@
+﻿@foreach (var row in ViewBag.potionsGrid) {
+	<div class="row background">
+		@foreach (var potion in (List<PotionCommotion.Entities.Potion>)row) {
+			<div id="@(PotionCommotion.Controllers.DefaultController.POTION_HTML_ID_PREFIX + potion.Id)"
+					class="col-xl-1 col-lg-1 col-md-2 col-sm-3 col-4 potion @potion.GetViewImageClass()"
+					data-id="@potion.Id">@potion.Id</div>
+			}
+	</div>
+}

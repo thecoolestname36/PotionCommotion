@@ -1,0 +1,52 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.potion {
+    background-position-y: center;
+    background-position-x: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 0;
+    max-height: 150px;
+    height: 150px;
+    border: 5px inset sandybrown;
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 1px 1px white, -1px -1px white, 1px -1px white, -1px 1px white;
+}
+
+.blue {
+    background-image: url('Images/potion_blue_sm.png');
+}
+
+.green {
+    background-image: url('Images/potion_green_sm.png');
+}
+
+.red {
+    background-image: url('Images/potion_red_sm.png');
+}
+
+.background {
+    background-image: url('Images/potion_background.jpg');
+}
+
+.modal-body {
+    font-family: cursive;
+    font-size: 36px;
+}

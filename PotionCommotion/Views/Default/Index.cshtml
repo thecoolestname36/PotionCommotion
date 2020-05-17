@@ -1,0 +1,31 @@
+﻿@using System.Web.Optimization
+
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="shortcut icon" href="~/Content/Images/favicon.png" type="image/x-icon" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Potion Commotion</title>
+	@Styles.Render("~/bundles/css")
+	@Scripts.Render("~/bundles/jquery")
+	@Scripts.Render("~/bundles/bootstrap")
+	@Scripts.Render("~/bundles/socket")
+	@Scripts.Render("~/viewBundles/default")
+</head>
+	<body>
+		<div id="potions-grid" data-potionsgridurl="@Url.Action("PotionsGrid")" data-selectpotionurl="@Url.Action("SelectPotion")" class="container"></div>
+		<div>
+			<button id="reset-btn" data-url="@Url.Action("Reset")">Reset</button>
+		</div>
+		<div class="modal fade" id="potionModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div id="potion-modal-body" class="modal-body"></div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
